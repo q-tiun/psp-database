@@ -1,1 +1,48 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: white;
+}
 
+header {
+    padding: 20px;
+    text-align: center;
+    background: #111;
+    border-bottom: 2px solid #1ed760;
+}
+
+.table-section {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+thead {
+    background: #222;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background: #181818;
+}
+
+.positive {
+    color: #1ed760;
+    font-weight: bold;
+}
+
+.negative {
+    color: #ff4e4e;
+    font-weight: bold;
+}
