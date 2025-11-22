@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PSP Database</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Connect Firebase -->
+    <script type="module" src="firebase.js"></script>
+
+    <!-- Test Firestore -->
+    <script type="module" src="db-test.js"></script>
+
+    <style>
+        body {
+            background: #0f0f0f;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background: #1a73e8;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #155bb8;
+        }
+    </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Player Stat Picks (PSP)</h1>
-    </header>
+    <h1>PSP Database (Firebase Test)</h1>
+    <p>Click the button below to add test data to Firebase Firestore.</p>
 
-    <section class="table-section">
-        <table>
-            <thead>
-                <tr>
-                    <th>Player</th>
-                    <th>Team</th>
-                    <th>Prop</th>
-                    <th>Line</th>
-                    <th>EV</th>
-                    <th>Notes</th>
-                </tr>
-            </thead>
-            <tbody id="player-table"></tbody>
-        </table>
-    </section>
+    <button id="testBtn">Add Test Data</button>
 
-    <script type="module" src="firebase.js"></script>
 </body>
 </html>
