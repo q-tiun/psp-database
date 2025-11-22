@@ -1,15 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PSP Database</title>
-
-    <!-- Connect Firebase -->
+    <title>PSP Player Database</title>
     <script type="module" src="firebase.js"></script>
-
-    <!-- Test Firestore -->
-    <script type="module" src="db-test.js"></script>
 
     <style>
         body {
@@ -19,34 +12,44 @@
             padding: 30px;
         }
 
-        h1 {
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        button {
-            padding: 10px 20px;
+        table {
+            width: 100%;
+            border-collapse: collapse;
             margin-top: 20px;
-            background: #1a73e8;
-            border: none;
-            border-radius: 8px;
-            color: white;
-            cursor: pointer;
-            font-size: 16px;
         }
 
-        button:hover {
-            background: #155bb8;
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #333;
+        }
+
+        .positive {
+            color: #4fff4f;
+        }
+
+        .negative {
+            color: #ff4f4f;
         }
     </style>
 </head>
 
 <body>
+    <h1>PSP Player Database</h1>
 
-    <h1>PSP Database (Firebase Test)</h1>
-    <p>Click the button below to add test data to Firebase Firestore.</p>
-
-    <button id="testBtn">Add Test Data</button>
-
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Team</th>
+                <th>Prop</th>
+                <th>Line</th>
+                <th>EV</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody id="player-table">
+            <!-- Firebase loads rows here -->
+        </tbody>
+    </table>
 </body>
 </html>
