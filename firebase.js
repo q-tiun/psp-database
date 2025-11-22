@@ -16,7 +16,7 @@ const firebaseConfig = {
     apiKey: "AIzaSyA5Gt3j3y234TynWq2iJ2yFtQcCbd8ZwqG",
     authDomain: "psp-database-8e5d0.firebaseapp.com",
     projectId: "psp-database-8e5d0",
-    storageBucket: "psp-database-8e5d0.appspot.com",
+    storageBucket: "psp-database-8e5d0.firebasestorage.app", // FIXED THIS
     messagingSenderId: "1070266297294",
     appId: "1:1070266297294:web:56b04860f949f2a09bfbf3",
     measurementId: "G-BYCRMHYLJY"
