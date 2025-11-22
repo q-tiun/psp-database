@@ -10,19 +10,17 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
 // -------------------------------
-// FIREBASE CONFIG (REPLACE THIS)
+// FIREBASE CONFIG (YOUR REAL ONE)
 // -------------------------------
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY_HERE",
-    authDomain: "YOUR_AUTH_DOMAIN_HERE",
-    projectId: "YOUR_PROJECT_ID_HERE",
-    storageBucket: "YOUR_STORAGE_BUCKET_HERE",
-    messagingSenderId: "YOUR_MSG_SENDER_ID_HERE",
-    appId: "YOUR_APP_ID_HERE"
+    apiKey: "AIzaSyA5Gt3j3y234TynWq2iJ2yFtQcCbd8ZwqG",
+    authDomain: "psp-database-8e5d0.firebaseapp.com",
+    projectId: "psp-database-8e5d0",
+    storageBucket: "psp-database-8e5d0.appspot.com",
+    messagingSenderId: "1070266297294",
+    appId: "1:1070266297294:web:56b04860f949f2a09bfbf3",
+    measurementId: "G-BYCRMHYLJY"
 };
-
-// If you haven't set Firebase yet, leave it like this:
-// It won't break anything — it just won't load player data yet.
 
 // -------------------------------
 // INIT
