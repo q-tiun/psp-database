@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSP Database</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+    <header>
+        <h1>Player Stat Picks (PSP)</h1>
+    </header>
+
+    <section class="table-section">
+        <table>
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>Team</th>
+                    <th>Prop</th>
+                    <th>Line</th>
+                    <th>EV</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody id="player-table"></tbody>
+        </table>
+    </section>
+
+    <script type="module" src="firebase.js"></script>
+</body>
+</html>
